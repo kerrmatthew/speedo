@@ -8,10 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, speedModelDelegate {
+    
+    @IBOutlet weak var readout: UILabel!
+    @IBOutlet weak var pointer: UILabel!
 
+    let speedo = speedModel ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        speedo.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +26,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func speedDidChange(speed: Double) {
+        readout.text = String(speed)
+    }
+    
+    func headingDidChange(heading: Double) {
+        pointer.transform.rotated(by: CGFloat(heading) / 180 * 3.14 )
+    }
 
+    
 }
 

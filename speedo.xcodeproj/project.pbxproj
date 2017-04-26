@@ -14,6 +14,8 @@
 		0615C69C1EAED301009CD5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0615C69A1EAED301009CD5A3 /* LaunchScreen.storyboard */; };
 		0615C6A71EAED301009CD5A3 /* speedoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615C6A61EAED301009CD5A3 /* speedoTests.swift */; };
 		0615C6B21EAED301009CD5A3 /* speedoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615C6B11EAED301009CD5A3 /* speedoUITests.swift */; };
+		0615C6C01EAED7FE009CD5A3 /* speedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615C6BF1EAED7FE009CD5A3 /* speedModel.swift */; };
+		067D89F71EB089E100C7AF78 /* speedModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0615C6AD1EAED301009CD5A3 /* speedoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speedoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0615C6B11EAED301009CD5A3 /* speedoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speedoUITests.swift; sourceTree = "<group>"; };
 		0615C6B31EAED301009CD5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0615C6BF1EAED7FE009CD5A3 /* speedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedModel.swift; sourceTree = "<group>"; };
+		067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				0615C6911EAED301009CD5A3 /* AppDelegate.swift */,
 				0615C6931EAED301009CD5A3 /* ViewController.swift */,
 				0615C6951EAED301009CD5A3 /* Main.storyboard */,
+				0615C6BF1EAED7FE009CD5A3 /* speedModel.swift */,
+				067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */,
 				0615C6981EAED301009CD5A3 /* Assets.xcassets */,
 				0615C69A1EAED301009CD5A3 /* LaunchScreen.storyboard */,
 				0615C69D1EAED301009CD5A3 /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067D89F71EB089E100C7AF78 /* speedModelDelegate.swift in Sources */,
 				0615C6941EAED301009CD5A3 /* ViewController.swift in Sources */,
 				0615C6921EAED301009CD5A3 /* AppDelegate.swift in Sources */,
+				0615C6C01EAED7FE009CD5A3 /* speedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +515,7 @@
 				0615C6B81EAED301009CD5A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0615C6B91EAED301009CD5A3 /* Build configuration list for PBXNativeTarget "speedoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				0615C6BB1EAED301009CD5A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0615C6BC1EAED301009CD5A3 /* Build configuration list for PBXNativeTarget "speedoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				0615C6BE1EAED301009CD5A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
