@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>speedoWatch (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>speedoWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>speedoWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>0615C6AC1EAED301009CD5A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>06271E301ECEC56400D1464D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

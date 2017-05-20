@@ -15,6 +15,15 @@
 		0615C6A71EAED301009CD5A3 /* speedoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615C6A61EAED301009CD5A3 /* speedoTests.swift */; };
 		0615C6B21EAED301009CD5A3 /* speedoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615C6B11EAED301009CD5A3 /* speedoUITests.swift */; };
 		0615C6C01EAED7FE009CD5A3 /* speedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615C6BF1EAED7FE009CD5A3 /* speedModel.swift */; };
+		06271E351ECEC56400D1464D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06271E331ECEC56400D1464D /* Interface.storyboard */; };
+		06271E371ECEC56400D1464D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06271E361ECEC56400D1464D /* Assets.xcassets */; };
+		06271E3E1ECEC56400D1464D /* speedoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 06271E3D1ECEC56400D1464D /* speedoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		06271E451ECEC56400D1464D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E441ECEC56400D1464D /* InterfaceController.swift */; };
+		06271E471ECEC56400D1464D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E461ECEC56400D1464D /* ExtensionDelegate.swift */; };
+		06271E491ECEC56400D1464D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E481ECEC56400D1464D /* NotificationController.swift */; };
+		06271E4B1ECEC56400D1464D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E4A1ECEC56400D1464D /* ComplicationController.swift */; };
+		06271E4D1ECEC56400D1464D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06271E4C1ECEC56400D1464D /* Assets.xcassets */; };
+		06271E511ECEC56400D1464D /* speedoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 06271E311ECEC56400D1464D /* speedoWatch.app */; };
 		067D89F71EB089E100C7AF78 /* speedModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +42,46 @@
 			remoteGlobalIDString = 0615C68D1EAED301009CD5A3;
 			remoteInfo = speedo;
 		};
+		06271E3F1ECEC56400D1464D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0615C6861EAED301009CD5A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06271E3C1ECEC56400D1464D;
+			remoteInfo = "speedoWatch Extension";
+		};
+		06271E4F1ECEC56400D1464D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0615C6861EAED301009CD5A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06271E301ECEC56400D1464D;
+			remoteInfo = speedoWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06271E551ECEC56400D1464D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				06271E3E1ECEC56400D1464D /* speedoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06271E591ECEC56400D1464D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				06271E511ECEC56400D1464D /* speedoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0615C68E1EAED301009CD5A3 /* speedo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speedo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +98,18 @@
 		0615C6B11EAED301009CD5A3 /* speedoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speedoUITests.swift; sourceTree = "<group>"; };
 		0615C6B31EAED301009CD5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0615C6BF1EAED7FE009CD5A3 /* speedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedModel.swift; sourceTree = "<group>"; };
+		06271E311ECEC56400D1464D /* speedoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speedoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06271E341ECEC56400D1464D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		06271E361ECEC56400D1464D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06271E381ECEC56400D1464D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06271E3D1ECEC56400D1464D /* speedoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "speedoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06271E431ECEC56400D1464D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		06271E441ECEC56400D1464D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		06271E461ECEC56400D1464D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		06271E481ECEC56400D1464D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		06271E4A1ECEC56400D1464D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		06271E4C1ECEC56400D1464D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06271E4E1ECEC56400D1464D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +135,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06271E3A1ECEC56400D1464D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +151,8 @@
 				0615C6901EAED301009CD5A3 /* speedo */,
 				0615C6A51EAED301009CD5A3 /* speedoTests */,
 				0615C6B01EAED301009CD5A3 /* speedoUITests */,
+				06271E321ECEC56400D1464D /* speedoWatch */,
+				06271E411ECEC56400D1464D /* speedoWatch Extension */,
 				0615C68F1EAED301009CD5A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +163,8 @@
 				0615C68E1EAED301009CD5A3 /* speedo.app */,
 				0615C6A21EAED301009CD5A3 /* speedoTests.xctest */,
 				0615C6AD1EAED301009CD5A3 /* speedoUITests.xctest */,
+				06271E311ECEC56400D1464D /* speedoWatch.app */,
+				06271E3D1ECEC56400D1464D /* speedoWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +202,38 @@
 			path = speedoUITests;
 			sourceTree = "<group>";
 		};
+		06271E321ECEC56400D1464D /* speedoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				06271E331ECEC56400D1464D /* Interface.storyboard */,
+				06271E361ECEC56400D1464D /* Assets.xcassets */,
+				06271E381ECEC56400D1464D /* Info.plist */,
+			);
+			path = speedoWatch;
+			sourceTree = "<group>";
+		};
+		06271E411ECEC56400D1464D /* speedoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				06271E441ECEC56400D1464D /* InterfaceController.swift */,
+				06271E461ECEC56400D1464D /* ExtensionDelegate.swift */,
+				06271E481ECEC56400D1464D /* NotificationController.swift */,
+				06271E4A1ECEC56400D1464D /* ComplicationController.swift */,
+				06271E4C1ECEC56400D1464D /* Assets.xcassets */,
+				06271E4E1ECEC56400D1464D /* Info.plist */,
+				06271E421ECEC56400D1464D /* Supporting Files */,
+			);
+			path = "speedoWatch Extension";
+			sourceTree = "<group>";
+		};
+		06271E421ECEC56400D1464D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06271E431ECEC56400D1464D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +244,12 @@
 				0615C68A1EAED301009CD5A3 /* Sources */,
 				0615C68B1EAED301009CD5A3 /* Frameworks */,
 				0615C68C1EAED301009CD5A3 /* Resources */,
+				06271E591ECEC56400D1464D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				06271E501ECEC56400D1464D /* PBXTargetDependency */,
 			);
 			name = speedo;
 			productName = speedo;
@@ -187,6 +292,40 @@
 			productReference = 0615C6AD1EAED301009CD5A3 /* speedoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		06271E301ECEC56400D1464D /* speedoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06271E561ECEC56400D1464D /* Build configuration list for PBXNativeTarget "speedoWatch" */;
+			buildPhases = (
+				06271E2F1ECEC56400D1464D /* Resources */,
+				06271E551ECEC56400D1464D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06271E401ECEC56400D1464D /* PBXTargetDependency */,
+			);
+			name = speedoWatch;
+			productName = speedoWatch;
+			productReference = 06271E311ECEC56400D1464D /* speedoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		06271E3C1ECEC56400D1464D /* speedoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06271E521ECEC56400D1464D /* Build configuration list for PBXNativeTarget "speedoWatch Extension" */;
+			buildPhases = (
+				06271E391ECEC56400D1464D /* Sources */,
+				06271E3A1ECEC56400D1464D /* Frameworks */,
+				06271E3B1ECEC56400D1464D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "speedoWatch Extension";
+			productName = "speedoWatch Extension";
+			productReference = 06271E3D1ECEC56400D1464D /* speedoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +338,7 @@
 				TargetAttributes = {
 					0615C68D1EAED301009CD5A3 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = D55P8G9TDJ;
 						ProvisioningStyle = Automatic;
 					};
 					0615C6A11EAED301009CD5A3 = {
@@ -210,6 +350,16 @@
 						CreatedOnToolsVersion = 8.3.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0615C68D1EAED301009CD5A3;
+					};
+					06271E301ECEC56400D1464D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = D55P8G9TDJ;
+						ProvisioningStyle = Automatic;
+					};
+					06271E3C1ECEC56400D1464D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = D55P8G9TDJ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -229,6 +379,8 @@
 				0615C68D1EAED301009CD5A3 /* speedo */,
 				0615C6A11EAED301009CD5A3 /* speedoTests */,
 				0615C6AC1EAED301009CD5A3 /* speedoUITests */,
+				06271E301ECEC56400D1464D /* speedoWatch */,
+				06271E3C1ECEC56400D1464D /* speedoWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +407,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06271E2F1ECEC56400D1464D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06271E371ECEC56400D1464D /* Assets.xcassets in Resources */,
+				06271E351ECEC56400D1464D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06271E3B1ECEC56400D1464D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06271E4D1ECEC56400D1464D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +457,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06271E391ECEC56400D1464D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06271E491ECEC56400D1464D /* NotificationController.swift in Sources */,
+				06271E4B1ECEC56400D1464D /* ComplicationController.swift in Sources */,
+				06271E471ECEC56400D1464D /* ExtensionDelegate.swift in Sources */,
+				06271E451ECEC56400D1464D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,6 +480,16 @@
 			isa = PBXTargetDependency;
 			target = 0615C68D1EAED301009CD5A3 /* speedo */;
 			targetProxy = 0615C6AE1EAED301009CD5A3 /* PBXContainerItemProxy */;
+		};
+		06271E401ECEC56400D1464D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06271E3C1ECEC56400D1464D /* speedoWatch Extension */;
+			targetProxy = 06271E3F1ECEC56400D1464D /* PBXContainerItemProxy */;
+		};
+		06271E501ECEC56400D1464D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06271E301ECEC56400D1464D /* speedoWatch */;
+			targetProxy = 06271E4F1ECEC56400D1464D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,6 +508,14 @@
 				0615C69B1EAED301009CD5A3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		06271E331ECEC56400D1464D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06271E341ECEC56400D1464D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D55P8G9TDJ;
 				INFOPLIST_FILE = speedo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo;
@@ -434,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D55P8G9TDJ;
 				INFOPLIST_FILE = speedo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo;
@@ -496,6 +696,76 @@
 			};
 			name = Release;
 		};
+		06271E531ECEC56400D1464D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = D55P8G9TDJ;
+				INFOPLIST_FILE = "speedoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		06271E541ECEC56400D1464D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = D55P8G9TDJ;
+				INFOPLIST_FILE = "speedoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		06271E571ECEC56400D1464D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D55P8G9TDJ;
+				IBSC_MODULE = speedoWatch_Extension;
+				INFOPLIST_FILE = speedoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		06271E581ECEC56400D1464D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D55P8G9TDJ;
+				IBSC_MODULE = speedoWatch_Extension;
+				INFOPLIST_FILE = speedoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +804,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		06271E521ECEC56400D1464D /* Build configuration list for PBXNativeTarget "speedoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06271E531ECEC56400D1464D /* Debug */,
+				06271E541ECEC56400D1464D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06271E561ECEC56400D1464D /* Build configuration list for PBXNativeTarget "speedoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06271E571ECEC56400D1464D /* Debug */,
+				06271E581ECEC56400D1464D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
