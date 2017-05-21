@@ -8,12 +8,21 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
+class InterfaceController: WKInterfaceController, SpeedoDelegate {
 
-class InterfaceController: WKInterfaceController {
-
+    var speedo = Speedo ()
+    
+    
+    @IBOutlet var speedLabel: WKInterfaceLabel!
+    @IBOutlet var headingLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
+        speedo.delegate = self
+        
         
         // Configure interface objects here.
     }
@@ -27,5 +36,17 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    
+    func speedDidChange(speed: Double) {
+        speedLabel.setText( String(speed) )
+    }
+
+    func headingDidChange(heading: Double) {
+        headingLabel.setText( String(heading) )
+    }
+
+    func session(_ session: WCSession,
+                 didReceiveApplicationContext applicationContext: [String : Any]) {}
 
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,7 +12,16 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="speedoWatch" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="speedoWatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Speed" id="Lig-ph-S5c"/>
+                        <label alignment="left" text="heading" id="YIV-s8-UWG"/>
+                    </items>
+                    <connections>
+                        <outlet property="headingLabel" destination="YIV-s8-UWG" id="s1f-BZ-HtV"/>
+                        <outlet property="speedLabel" destination="Lig-ph-S5c" id="HRy-dw-BHc"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>

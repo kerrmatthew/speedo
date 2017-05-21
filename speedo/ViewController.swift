@@ -31,7 +31,7 @@ class ViewController: UIViewController, speedModelDelegate {
     }
     
     func headingDidChange(heading: Double) {
-        pointer.transform.rotated(by: CGFloat(heading) / 180 * 3.14 )
+        pointer.transform = CGAffineTransform(rotationAngle: CGFloat(heading) / 180 * 3.14 )
     }
 
     

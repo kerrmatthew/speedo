@@ -24,6 +24,7 @@
 		06271E4B1ECEC56400D1464D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E4A1ECEC56400D1464D /* ComplicationController.swift */; };
 		06271E4D1ECEC56400D1464D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06271E4C1ECEC56400D1464D /* Assets.xcassets */; };
 		06271E511ECEC56400D1464D /* speedoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 06271E311ECEC56400D1464D /* speedoWatch.app */; };
+		06271E5B1ED1592800D1464D /* speedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E5A1ED1592700D1464D /* speedo.swift */; };
 		067D89F71EB089E100C7AF78 /* speedModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		06271E4A1ECEC56400D1464D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		06271E4C1ECEC56400D1464D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06271E4E1ECEC56400D1464D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06271E5A1ED1592700D1464D /* speedo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedo.swift; sourceTree = "<group>"; };
 		067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +224,7 @@
 				06271E4C1ECEC56400D1464D /* Assets.xcassets */,
 				06271E4E1ECEC56400D1464D /* Info.plist */,
 				06271E421ECEC56400D1464D /* Supporting Files */,
+				06271E5A1ED1592700D1464D /* speedo.swift */,
 			);
 			path = "speedoWatch Extension";
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06271E5B1ED1592800D1464D /* speedo.swift in Sources */,
 				06271E491ECEC56400D1464D /* NotificationController.swift in Sources */,
 				06271E4B1ECEC56400D1464D /* ComplicationController.swift in Sources */,
 				06271E471ECEC56400D1464D /* ExtensionDelegate.swift in Sources */,
@@ -620,11 +624,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D55P8G9TDJ;
 				INFOPLIST_FILE = speedo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -633,11 +639,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D55P8G9TDJ;
 				INFOPLIST_FILE = speedo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wud.speedo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
