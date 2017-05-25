@@ -34,17 +34,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mo-KK-IyQ">
+                                <rect key="frame" x="178.5" y="358" width="17.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="1v6-Zf-dr8" secondAttribute="trailing" id="4rL-fZ-pkY"/>
+                            <constraint firstItem="5Mo-KK-IyQ" firstAttribute="top" secondItem="1v6-Zf-dr8" secondAttribute="bottom" constant="8" id="8a5-Uz-A9X"/>
                             <constraint firstItem="O6T-ox-gDH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zp-6H-IgU"/>
                             <constraint firstItem="O6T-ox-gDH" firstAttribute="top" secondItem="1v6-Zf-dr8" secondAttribute="bottom" constant="55.5" id="Y11-CG-XgA"/>
                             <constraint firstItem="1v6-Zf-dr8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vC1-Gj-7Kj"/>
+                            <constraint firstItem="5Mo-KK-IyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vO6-y0-IML"/>
                             <constraint firstItem="1v6-Zf-dr8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w0R-LE-gtl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="courseLabel" destination="5Mo-KK-IyQ" id="DPF-5v-3Xm"/>
                         <outlet property="pointer" destination="O6T-ox-gDH" id="Wrr-Wo-SjF"/>
                         <outlet property="readout" destination="1v6-Zf-dr8" id="oyH-GS-SBa"/>
                     </connections>

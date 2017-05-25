@@ -33,8 +33,8 @@ class speedModel: NSObject, CLLocationManagerDelegate, WCSessionDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         if let location = locations.last {
-             delegate?.speedDidChange( speed: location.speed )
-            updateWatchExtension( [ "speed": location.speed ] )
+             delegate?.speedDidChange( speed: location.speed, course: location.course )
+            updateWatchExtension( [ "speed": location.speed, "course": location.course ] )
         }
     }
     

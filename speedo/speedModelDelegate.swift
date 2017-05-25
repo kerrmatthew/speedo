@@ -9,6 +9,6 @@
 import Foundation
 
 protocol speedModelDelegate {
-    func speedDidChange(speed: Double)
+    func speedDidChange(speed: Double, course: Double )
     func headingDidChange(heading: Double)
 }

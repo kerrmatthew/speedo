@@ -16,8 +16,10 @@
                     <items>
                         <label alignment="left" text="Speed" id="Lig-ph-S5c"/>
                         <label alignment="left" text="heading" id="YIV-s8-UWG"/>
+                        <label alignment="left" text="course" id="Jcv-7j-Li9"/>
                     </items>
                     <connections>
+                        <outlet property="courseLabel" destination="Jcv-7j-Li9" id="s7p-IO-n8X"/>
                         <outlet property="headingLabel" destination="YIV-s8-UWG" id="s1f-BZ-HtV"/>
                         <outlet property="speedLabel" destination="Lig-ph-S5c" id="HRy-dw-BHc"/>
                     </connections>

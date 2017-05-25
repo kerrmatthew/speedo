@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController, SpeedoDelegate {
     
     @IBOutlet var speedLabel: WKInterfaceLabel!
     @IBOutlet var headingLabel: WKInterfaceLabel!
+    @IBOutlet var courseLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -40,6 +41,9 @@ class InterfaceController: WKInterfaceController, SpeedoDelegate {
     
     func speedDidChange(speed: Double) {
         speedLabel.setText( String(speed) )
+    }
+    func speedDidChange(course: Double) {
+        courseLabel.setText(String(course))
     }
 
     func headingDidChange(heading: Double) {

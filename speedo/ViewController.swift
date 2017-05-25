@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, speedModelDelegate {
     
     @IBOutlet weak var readout: UILabel!
+    @IBOutlet weak var courseLabel: UILabel!
     @IBOutlet weak var pointer: UILabel!
 
     let speedo = speedModel ()
@@ -26,8 +27,9 @@ class ViewController: UIViewController, speedModelDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func speedDidChange(speed: Double) {
+    func speedDidChange(speed: Double, course: Double) {
         readout.text = String(speed)
+        courseLabel.text = String(course)
     }
     
     func headingDidChange(heading: Double) {

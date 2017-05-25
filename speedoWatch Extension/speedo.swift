@@ -35,6 +35,8 @@ class Speedo: NSObject, WCSessionDelegate {
             switch key {
                 case "speed":
                     delegate!.speedDidChange(speed: value as! Double)
+                case "course":
+                    delegate!.speedDidChange(course: value as! Double)
                 case "heading":
                     delegate!.headingDidChange(heading: value as! Double)
                 default:
@@ -48,5 +50,6 @@ class Speedo: NSObject, WCSessionDelegate {
 
 protocol SpeedoDelegate {
     func speedDidChange(speed: Double)
+    func speedDidChange(course: Double)
     func headingDidChange(heading: Double)
 }
