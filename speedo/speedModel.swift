@@ -15,6 +15,8 @@ class speedModel: NSObject, CLLocationManagerDelegate, WCSessionDelegate {
     let locationManager = CLLocationManager ()
     var delegate: speedModelDelegate?
     var watchSession: WCSession?
+    var locations: [CLLocation] = []
+    var lastHeading: Double?
     
     
     override init ()
@@ -33,13 +35,20 @@ class speedModel: NSObject, CLLocationManagerDelegate, WCSessionDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         if let location = locations.last {
+            
+            // update the speed
              delegate?.speedDidChange( speed: location.speed, course: location.course )
             updateWatchExtension( [ "speed": location.speed, "course": location.course ] )
+            
+            // also update lat and long, and give us some location data
+            delegate?.locationDidChange( location: location.coordinate, accuracy: location.horizontalAccuracy )
+            self.locations.append(location)
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading)
     {
+        self.lastHeading = newHeading.trueHeading
         delegate?.headingDidChange(heading: newHeading.trueHeading)
         updateWatchExtension( [ "heading": newHeading.trueHeading ] )
 

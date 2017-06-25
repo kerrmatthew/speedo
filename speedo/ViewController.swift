@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController, speedModelDelegate {
+class ViewController: UIViewController, speedModelDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var readout: UILabel!
     @IBOutlet weak var courseLabel: UILabel!
     @IBOutlet weak var pointer: UILabel!
-
+    @IBOutlet weak var mapView: MKMapView!
+    
     let speedo = speedModel ()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         speedo.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mapView.mapType = .satelliteFlyover
+        mapView.showsBuildings = true
+        mapView.isPitchEnabled = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +43,45 @@ class ViewController: UIViewController, speedModelDelegate {
     func headingDidChange(heading: Double) {
         pointer.transform = CGAffineTransform(rotationAngle: CGFloat(heading) / 180 * 3.14 )
     }
+    
+    func locationDidChange(location: CLLocationCoordinate2D, accuracy: CLLocationAccuracy) {
+        self.updatePath()
+        
+        if let lastLocation = speedo.locations.last {
+            let camera = MKMapCamera(lookingAtCenter: lastLocation.coordinate,
+                                     fromDistance: 100 + lastLocation.horizontalAccuracy*5,
+                                    pitch: 30,
+                                    heading: lastLocation.course)
+            mapView.setCamera(camera, animated: true)
+        }
+        
+        
 
+        
+    }
+    
+    
+    private func updatePath() {
+        
+        let coordinates = speedo.locations.map(
+            { location -> CLLocationCoordinate2D in
+                return location.coordinate
+            }
+        )
+        
+        if let currentPath = mapView.overlays.last {
+          mapView.remove(currentPath)
+        }
+        mapView.add(MKPolyline(coordinates: coordinates, count: coordinates.count))
+    }
+
+    // MARK Map view delegate methods
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        polylineRenderer.strokeColor = .red
+        polylineRenderer.lineWidth = 2
+        return polylineRenderer
+    }
     
 }
 

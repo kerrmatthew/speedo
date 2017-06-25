@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol speedModelDelegate {
     func speedDidChange(speed: Double, course: Double )
     func headingDidChange(heading: Double)
+    func locationDidChange(location: CLLocationCoordinate2D, accuracy: CLLocationAccuracy)
 }

@@ -26,6 +26,7 @@
 		06271E511ECEC56400D1464D /* speedoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 06271E311ECEC56400D1464D /* speedoWatch.app */; };
 		06271E5B1ED1592800D1464D /* speedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06271E5A1ED1592700D1464D /* speedo.swift */; };
 		067D89F71EB089E100C7AF78 /* speedModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */; };
+		069F3D491EFE3645002A0D5A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069F3D481EFE3645002A0D5A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		06271E4E1ECEC56400D1464D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06271E5A1ED1592700D1464D /* speedo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedo.swift; sourceTree = "<group>"; };
 		067D89F61EB089E100C7AF78 /* speedModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speedModelDelegate.swift; sourceTree = "<group>"; };
+		069F3D481EFE3645002A0D5A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069F3D491EFE3645002A0D5A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +159,7 @@
 				06271E321ECEC56400D1464D /* speedoWatch */,
 				06271E411ECEC56400D1464D /* speedoWatch Extension */,
 				0615C68F1EAED301009CD5A3 /* Products */,
+				069F3D471EFE3645002A0D5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +239,14 @@
 				06271E431ECEC56400D1464D /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		069F3D471EFE3645002A0D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				069F3D481EFE3645002A0D5A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +355,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = D55P8G9TDJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0615C6A11EAED301009CD5A3 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -820,6 +837,7 @@
 				06271E541ECEC56400D1464D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06271E561ECEC56400D1464D /* Build configuration list for PBXNativeTarget "speedoWatch" */ = {
 			isa = XCConfigurationList;
@@ -828,6 +846,7 @@
 				06271E581ECEC56400D1464D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
